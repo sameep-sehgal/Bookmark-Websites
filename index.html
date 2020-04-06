@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Website Bookmarker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Bookmark Your Favourite Websites!!</h1>
+
+    <div class="container">
+        <h3>Website name</h3>
+        <input type="text" placeholder="Website Name">
+        <h3>Website URL</h3>
+        <input type="url" placeholder="Website URL">
+        <button class="btn submit">Submit</button>
+    </div>
+    <h1>Your Bookmarks</h1>
+
+    <form class="list">
+        <div class="sub container">
+            <h4>Youtube</h4>
+            <h5>(https://www.youtube.com/)</h5>
+            <a href="https://www.youtube.com/"><button class="btn visit">Visit</button></a>
+            <button class="btn delete" onclick="this.parentNode.parentNode.removeChild(this.parentNode)">Delete</button>
+        </div>
+        <div class=" sub container">
+            <h4>Google</h4>
+            <h5>(https://www.google.com/)</h5>
+            <a href="https://www.google.com/"><button class="btn visit">Visit</button></a>
+            <button class="btn delete" onclick="this.parentNode.parentNode.removeChild(this.parentNode)">Delete</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
